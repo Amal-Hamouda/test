@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Montserrat;
+}
+::selection {
+    background: #00b39b;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+ul,ol{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color : white;
+    box-shadow: 0 3px 5px 0 #e2e1e0;
+    position: fixed;
+    padding: 25px 0;
+    top:0;
+    right: 0;
+    left: 0;
+}
+
+.navigation-list{
+    /* border: 1px solid; */
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ababab;
+}
+
+/* .navigation-list li{
+    width: 33%;
+} */
+.navigation-list li:hover{
+    color: #00b39b;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    padding: 10px;
+    top: 50px;
+    right: 15%;
+}
+
+.drop-down li:hover{
+    background-color: #f6f8f8;
+}
+
+.drop-down li{
+    padding : 10px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ababab;
+}
+
+.dropdown-btn:hover .drop-down{
+    display: block;
+    color: black; 
+}
+
+.intro ,.intro-cards ,.brands{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 200px; */
+    padding-top: 150px;
+}
+#intro-h{
+    font-size: 2.125rem;
+    font-weight:300;
+    letter-spacing: -.3px;
+    text-align: center;
+    color: #00b39b;
+    /* margin: 1em 0; */
+}
+
+.intro-p{
+    display: flex;
+    justify-content: space-around;
+}
+.intro-p p{
+    padding: 2%;
+    color: #747474;
+    line-height: 1.5;
+}
+.intro-cards{
+    display: flex;
+    justify-content: space-around;
+        /* border: 1px solid; */
+}
+
+.intro-cards > div{
+    margin: 10px;
+}
+
+.intro-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #00ccb1;
+    padding: 2em 2em 2em;
+    height: 250px;
+    width:250px;
+    color: white;
+    /* border: 1px solid black; */
+
+}
+
+.intro-item-top h1,h2 {
+    font-size: 20px;
+}
+
+select{
+    text-decoration: none!important;
+    background: transparent;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+option{
+    color: black;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+#Brands-h{
+    font-size: 30px;
+    font-weight:300;
+    letter-spacing: -.3px;
+    text-align:left;
+    color: #00b39b;
+    width: 30%;
+}
+
+.brands__logos{
+    display: flex;
+    align-items: center;
+}
+
+.brands__logos img {
+    /* height: 20px; */
+    width: auto;
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+.stats{
+    height: 400px;
+    background: #e5faf8;
+    background-size: cover;
+}
